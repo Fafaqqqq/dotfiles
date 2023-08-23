@@ -1,0 +1,17 @@
+{
+    "workspace.library": [
+        "/home/user/.config/nvim",
+        "/home/user/.local/share/nvim/site",
+        "/home/user/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+        "/home/user/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+        "/home/user/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+        "/home/user/.local/share/nvim/site/pack/packer/start/mason.nvim",
+        "/home/user/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+        "/home/user/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+        "/home/user/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+        "/home/user/.local/share/nvim/site/pack/packer/start/packer.nvim",
+        "/usr/share/nvim/runtime",
+        "/lib/nvim",
+        "${3rd}/luassert/library"
+    ]
+}

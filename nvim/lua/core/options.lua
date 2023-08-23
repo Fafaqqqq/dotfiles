@@ -9,6 +9,7 @@ local indent = 2
 -- cmd([[
 --	filetype plugin indent on
 --]])
+g.mapleader = ' '
 
 opt.backspace = {"eol", "start", "indent"} -- allow backspacing over everything in insert mode
 opt.clipboard = "unnamedplus" -- allow neovim to access the system clipboard
@@ -77,4 +78,4 @@ opt.updatetime = 100 -- signify default updatetime 4000ms is not good for async 
 -- theme
 opt.termguicolors = true -- enable 24-bit RGB colors
 opt.background = "dark"
-cmd.colorscheme("gruvbox")
+cmd.colorscheme("darkplus")

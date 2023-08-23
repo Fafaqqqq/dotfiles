@@ -1,5 +1,12 @@
 import:
- - ~/.config/alacritty/themes/themes/gruvbox_dark.yaml
+  # uncomment the flavour you want below:
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+#  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+#  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
+#  - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
+
+env:
+  TERM: xterm-256color
 
 window:
   dimensions:

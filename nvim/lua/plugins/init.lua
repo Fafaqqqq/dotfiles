@@ -7,6 +7,10 @@ end
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use { "ellisonleao/gruvbox.nvim" }
+  use 'lunarvim/darkplus.nvim'
+  -- If you are using Packer
+  use 'shaunsingh/nord.nvim'
+  use 'jacoborus/tender.vim'
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true },
@@ -30,14 +34,34 @@ return require('packer').startup(function(use)
       require("nvim-autopairs").setup()
     end
   }
-
   use {
     "williamboman/mason.nvim",
     config = function()
       require("mason").setup()
-    end,
+    end
   }
-  
+
+  use {
+    "williamboman/mason-lspconfig.nvim",
+    config = function()
+      require("mason-lspconfig").setup()
+    end
+  }
+
+  use {
+    "neovim/nvim-lspconfig",
+  }
+
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    },
+    config = function()
+      require("nvim-tree").setup {}
+    end
+  }
+
   if packer_bootstrap then
     require('packer').sync()
   end
