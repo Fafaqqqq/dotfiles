@@ -8,6 +8,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use { "ellisonleao/gruvbox.nvim" }
   use 'lunarvim/darkplus.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
   -- If you are using Packer
   use 'shaunsingh/nord.nvim'
   use 'jacoborus/tender.vim'

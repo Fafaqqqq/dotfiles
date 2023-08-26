@@ -2,8 +2,8 @@ local keymap = vim.keymap
 
 keymap.set('n', '<Leader>e', ":NvimTreeToggle<CR>", {silent = true})
 keymap.set('n', '<Leader>w', ":w<CR>", {silent = true})
-keymap.set('n', '<Leader>q', ":q<CR>", {silent = true})
-
+-- keymap.set('n', '<Leader>q', ":q<CR>", {silent = true})
+keymap.set('n', '<Leader>q', ":qa!<CR>", {silent = true})
 
 -- vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
