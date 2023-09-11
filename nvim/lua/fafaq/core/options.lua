@@ -3,7 +3,6 @@ local cmd = vim.cmd
 local opt = vim.opt
 -- Global variables
 local g = vim.g
-local s = vim.s
 local indent = 2
 
 -- cmd([[
@@ -78,5 +77,4 @@ opt.updatetime = 100 -- signify default updatetime 4000ms is not good for async 
 -- theme
 opt.termguicolors = true -- enable 24-bit RGB colors
 opt.background = "dark"
--- cmd.colorscheme("darkplus")
 cmd.colorscheme("catppuccin")

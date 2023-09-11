@@ -1,4 +1,13 @@
-require("lualine").setup {
+local M = {}
+
+table.insert(M, "nvim-lualine/lualine.nvim")
+
+M.dependencies = { "nvim-tree/nvim-web-devicons" }
+
+M.config = function()
+  local lualine = require('lualine')
+
+  lualine.setup {
   options = {
     icons_enabled = true,
     theme = 'catppuccin',
@@ -38,3 +47,6 @@ require("lualine").setup {
   inactive_winbar = {},
   extensions = {}
 }
+end
+
+return M
