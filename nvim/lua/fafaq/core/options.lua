@@ -8,13 +8,13 @@ local indent = 2
 -- cmd([[
 --	filetype plugin indent on
 --]])
-g.mapleader = ' '
+g.mapleader = " "
 
-opt.backspace = {"eol", "start", "indent"} -- allow backspacing over everything in insert mode
+opt.backspace = { "eol", "start", "indent" } -- allow backspacing over everything in insert mode
 opt.clipboard = "unnamedplus" -- allow neovim to access the system clipboard
 vim.opt.fileencoding = "utf-8" -- the encoding written to a file
 opt.encoding = "utf-8" -- the encoding
-opt.matchpairs = {"(:)", "{:}", "[:]", "<:>"}
+opt.matchpairs = { "(:)", "{:}", "[:]", "<:>" }
 opt.syntax = "enable"
 
 -- indention
@@ -29,7 +29,7 @@ opt.shiftround = true -- use multiple of shiftwidth when indenting with "<" and 
 opt.hlsearch = true -- highlight all matches on previous search pattern
 opt.ignorecase = true -- ignore case in search patterns
 opt.smartcase = true -- smart case
-opt.wildignore = opt.wildignore + {"*/node_modules/*", "*/.git/*", "*/vendor/*"}
+opt.wildignore = opt.wildignore + { "*/node_modules/*", "*/.git/*", "*/vendor/*" }
 opt.wildmenu = true -- make tab completion for files/buffers act like bash
 
 -- ui
@@ -38,11 +38,11 @@ opt.lazyredraw = true -- don"t update the display while executing macros
 opt.list = true
 -- You can also add "space" or "eol", but I feel it"s quite annoying
 opt.listchars = {
-    tab = "┊ ",
-    trail = "·",
-    extends = "»",
-    precedes = "«",
-    nbsp = "×"
+	tab = "┊ ",
+	trail = "·",
+	extends = "»",
+	precedes = "«",
+	nbsp = "×",
 }
 vim.wo.relativenumber = true
 
@@ -77,4 +77,4 @@ opt.updatetime = 100 -- signify default updatetime 4000ms is not good for async 
 -- theme
 opt.termguicolors = true -- enable 24-bit RGB colors
 opt.background = "dark"
-cmd.colorscheme("catppuccin")
+cmd.colorscheme("monokai")

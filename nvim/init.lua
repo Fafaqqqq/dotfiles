@@ -1,2 +1,2 @@
-require('fafaq.core')
-require('fafaq.lazy')
+require("fafaq.lazy")
+require("fafaq.core")
