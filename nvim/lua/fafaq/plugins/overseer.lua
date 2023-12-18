@@ -7,7 +7,6 @@ return {
 		local keymap = vim.keymap
 		overseer.setup({
 			strategy = "toggleterm",
-			templates = { "builtin", "user.proj_build" },
 		})
 
 		keymap.set("n", "<leader>ro", ":OverseerRun<CR>", {

@@ -8,6 +8,7 @@ return {
 		"saadparwaiz1/cmp_luasnip", -- for autocompletion
 		"rafamadriz/friendly-snippets", -- useful snippets
 		"onsails/lspkind.nvim", -- vs-code like pictograms
+		"rcarriga/cmp-dap",
 	},
 	config = function()
 		local cmp = require("cmp")
@@ -50,6 +51,12 @@ return {
 					maxwidth = 50,
 					ellipsis_char = "...",
 				}),
+			},
+		})
+
+		require("cmp").setup.filetype({ "dap-repl", "dapui_watches", "dapui_hover" }, {
+			sources = {
+				{ name = "dap" },
 			},
 		})
 	end,
