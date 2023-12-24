@@ -10,11 +10,11 @@ M.config = function()
 	lualine.setup({
 		options = {
 			icons_enabled = true,
-			theme = "monokai",
-			-- component_separators = { left = "", right = "" },
-			-- section_separators = { left = "", right = "" },
-			component_separators = { left = "", right = "" },
-			section_separators = { left = "", right = "" },
+			theme = "catppuccin",
+			component_separators = { left = "", right = "" },
+			section_separators = { left = "", right = "" },
+			-- component_separators = { left = "", right = "" },
+			-- section_separators = { left = "", right = "" },
 			disabled_filetypes = {
 				statusline = {},
 				winbar = {},

@@ -10,6 +10,8 @@ local indent = 2
 --]])
 g.mapleader = " "
 
+vim.fn.sign_define("DapBreakpoint", { text = "●", texthl = "", linehl = "", numhl = "" })
+
 opt.backspace = { "eol", "start", "indent" } -- allow backspacing over everything in insert mode
 opt.clipboard = "unnamedplus" -- allow neovim to access the system clipboard
 vim.opt.fileencoding = "utf-8" -- the encoding written to a file
@@ -77,4 +79,4 @@ opt.updatetime = 100 -- signify default updatetime 4000ms is not good for async 
 -- theme
 opt.termguicolors = true -- enable 24-bit RGB colors
 opt.background = "dark"
-cmd.colorscheme("monokai")
+cmd.colorscheme("catppuccin")
