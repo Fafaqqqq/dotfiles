@@ -14,12 +14,6 @@ return {
 			config = function(_, opts)
 				local dap, dapui = require("dap"), require("dapui")
 
-				--[[ dap.adapters.gdb = {
-					type = "executable",
-					command = "/usr/bin/gdb",
-					args = {},
-				} ]]
-
 				local status, cpp_config = pcall(require, "lua.launch")
 				if status then
 					dap.configurations.c = cpp_config
